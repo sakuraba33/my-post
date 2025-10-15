@@ -1,0 +1,10 @@
+title: 桜庭33の思考ノート
+description: ことばを整える場所
+theme: minima              # 標準テーマ（後で変えられる）
+lang: ja
+author: まいらｻﾝ
+plugins:
+  - jekyll-feed            # RSS自動生成
+  - jekyll-seo-tag         # SEO用メタタグ
+# プロジェクトサイトの場合は baseurl を設定（例: /my-blog）
+# baseurl: "/my-blog"
