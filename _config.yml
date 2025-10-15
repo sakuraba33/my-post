@@ -1,10 +1,43 @@
 title: 桜庭33の思考ノート
 description: ことばを整える場所
-theme: minima              # 標準テーマ（後で変えられる）
 lang: ja
 author: まいらｻﾝ
+
+# remote_theme: GitHub上のテーマを指定
+remote_theme: artemsheludko/flexible-jekyll
+
+# baseurl: プロジェクトサイトならリポジトリ名を指定
+baseurl: "/my-post"
+url: "https://sakuraba33.github.io"
+
+# ビルド時に読み込むプラグイン
 plugins:
-  - jekyll-feed            # RSS自動生成
-  - jekyll-seo-tag         # SEO用メタタグ
-# プロジェクトサイトの場合は baseurl を設定（例: /my-blog）
-# baseurl: "/my-blog"
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# ナビゲーション設定（上部メニュー）
+navigation:
+  - title: ホーム
+    url: /
+  - title: ハツメイカー
+    url: /about
+  - title: 記事一覧
+    url: /blog
+
+# SNSや外部リンク（任意）
+social_links:
+  github: sakuraba33
+  twitter:
+  # linkedin: 
+
+# 投稿設定
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num"
+
+# デザイン設定（Flexible Jekyll 独自）
+theme_settings:
+  google_fonts: "Noto Sans JP"
+  accent_color: "#0066cc"
+  background_color: "#ffffff"
+  text_color: "#333333"
